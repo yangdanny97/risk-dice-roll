@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Risk Dice Roll Simulator</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class='text-center'>
+        <img src='risk_logo.jpg' width="35%"/>
+        <p>Made by Danny Yang</p>
+    </div>
+    <div class='row'>
+        <div class='col-md-10 col-md-offset-1'>
+            <div class='row well'>
+                <div class=col-md-4>
+                        <h2>Dice Simulator for Risk</h2>
+                        <p>Number Attacking:</p>
+                        <input id='a' type='text'></input>
+                        <p>Number Defending:</p>
+                        <input id='b' type='text'></input>
+                        <p>Attackers remaining:</p>
+                        <input id='aR' type='text'></input>
+                        <p>Defenders remaining:</p>
+                        <input id='bR' type='text'></input>
+                        <br>
+                        <button id='button' class='btn btn-danger btn-lg'>Simulate battle</button>
+                </div>
+                <div class='col-md-4'>
+                    <h2>Instructions</h2>
+                    <ul>
+                      <li>Input troop numbers between 0 and 200</li>
+                      <li>Attacker number corresponds to how many troops are actually attacking</li>
+                      <li>Individual simulation results are logged on right</li>
+                    </ul>
+                </div>
+                <textarea id='console' class='col-md-4' rows='16' width='100%'></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
